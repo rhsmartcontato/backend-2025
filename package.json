@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "backend",
   "main": "src/index.js",
-  "type": "module",
   "scripts": {
     "dev": "node --watch --experimental-sqlite --trace-warnings src/index.js"
   },
@@ -13,6 +12,8 @@
   "author": "rhsmart",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
   }
 }
