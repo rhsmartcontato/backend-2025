@@ -3,11 +3,12 @@ const router = express.Router();
 
 import userRoutes from './userRoutes.js';
 import paymentRoutes from './paymentRoutes.js';
-import userController from '../controllers/userController.js';
 
+router.use('/users', userRoutes);
+router.use('/payments', paymentRoutes);
 
-router.use('/', userRoutes);
-router.use('/', paymentRoutes);
-router.use('/', userController);
+router.get('/', (req, res) => {
+  res.send('API Root');
+});
 
 export default router;

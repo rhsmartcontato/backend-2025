@@ -1,6 +1,7 @@
 import express from 'express';
 import rootRoutes from './routes/index.js';
 
+
 const server = express();
 
 const PORT = process.env.PORT || 3000;
